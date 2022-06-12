@@ -1,0 +1,29 @@
+.navbar{
+    background-color: aqua;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-menu p {
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+.navbar-logo {
+    font-weight: 800;
+    font-size: 3rem;
+}
