@@ -6,6 +6,7 @@ import {Heading} from '../../components'
 function About() {
   return (
       <>
+        <div className="about-wrapper" id='about'>
         <div className="about-heading-container">
             <Heading title="About Us" subtitle="Why choose us?" />
         </div>
@@ -16,6 +17,7 @@ function About() {
             <div className="about-image">
                 <img src={About_us} alt="about us"/>
             </div>
+        </div>
         </div>
       </>
   )

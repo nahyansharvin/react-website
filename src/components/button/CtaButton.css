@@ -1,5 +1,5 @@
-.cta-button button{
-    padding: 0.5rem 2rem;
+.cta-btn button{
+    padding: 0.8rem 2rem;
     border-radius: 50px;
     background-color: var(--color-tertiary);
     border: 0;

@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 .heading-text{
@@ -25,7 +26,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    width: 180px;
+    width: 170px;
     margin: 15px 0 0;
 }
 
@@ -46,5 +47,5 @@
 .seperator-blob-inner{
     width: 35px;
     border-radius: 10px;
-    background-color: #f76d0a;
+    background-color: #ff5823;
 }

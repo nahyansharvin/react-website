@@ -1,9 +1,9 @@
 import React from 'react'
 import './CtaButton.css'
 
-function CtaButton({text}) {
+function CtaButton({text,styleName}) {
   return (
-    <div className="cta-button">
+    <div className='cta-btn'>
         <button>{text}</button>
     </div>
   )
