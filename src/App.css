@@ -10,3 +10,11 @@ a{
     text-decoration: none;
     color: unset;
 }
+
+.section-margin{
+    margin: 5rem;
+}
+
+.section-padding{
+    padding: 0 5rem;
+}

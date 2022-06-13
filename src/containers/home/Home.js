@@ -14,7 +14,8 @@ function Home() {
             </div>
             <div className='hero-text'>
                 <h1>Welcome to the </h1><h1>Home Page</h1>
-                <Typical loop={Infinity} steps={["This is the home page of the application"]} />
+                {/* <Typical loop={Infinity} steps={["This is the home page of the application"]} /> */}
+                <p>This is the home page of the application</p>
                 <CtaButton styleName='primary-btn' text="Know More" />
             </div>
           </div>
