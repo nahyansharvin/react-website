@@ -1,4 +1,4 @@
-.cta-btn button{
+.cta-btn a{
     padding: 0.8rem 2rem;
     border-radius: 50px;
     background-color: var(--color-tertiary);

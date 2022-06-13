@@ -1,10 +1,10 @@
 import React from 'react'
 import './CtaButton.css'
 
-function CtaButton({text,styleName}) {
+function CtaButton({text,target}) {
   return (
     <div className='cta-btn'>
-        <button>{text}</button>
+        <a href={target}>{text}</a>
     </div>
   )
 }
