@@ -1,0 +1,38 @@
+.hero-container{
+    display: flex;
+    height: calc( 100vh - 5rem);
+    justify-content: space-evenly;
+}
+
+.hero-image{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img{
+    width: 70%;
+}
+
+.hero-text{
+    width: 40%;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.hero-text p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-secondary);
+    margin: 0.5rem 0;
+}

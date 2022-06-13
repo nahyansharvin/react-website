@@ -1,0 +1,23 @@
+.about-container{
+    height: calc(100vh - 5rem);
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-image{
+    width: 30%;
+}
+
+.about-text{
+    width: 30%;
+}
+
+.about-text p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-secondary);
+    margin: 0.5rem 0;
+    line-height: 1.5rem;
+}

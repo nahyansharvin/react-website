@@ -4,7 +4,8 @@
 :root{
     --font-family: 'Montserrat', sans-serif;
 
-    --color-primary: #fff;
-    --color-secondary: rgb(45, 43, 43);
+    --color-primary: #449FC5;
+    --color-secondary: rgb(43, 44, 45);
+    --color-tertiary: rgb(189, 215, 242);
     --color-bg: rgb(188, 188, 188);
 }
