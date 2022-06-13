@@ -5,7 +5,7 @@ import {Heading} from '../../components'
 
 function About() {
   return (
-      <>
+      
         <div className="about-wrapper" id='about'>
             <div className="about-heading-container">
                 <Heading title="About Us" subtitle="Why choose us?" />
@@ -19,7 +19,7 @@ function About() {
                 </div>
             </div>
         </div>
-      </>
+      
   )
 }
 

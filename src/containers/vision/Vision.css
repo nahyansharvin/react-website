@@ -1,0 +1,23 @@
+.vision-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+}
+
+.vision-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.vision-image{
+    width: 30%;
+}
+
+.vision-image img{
+    width: 100%;
+}
+
+.vision-text{
+    width: 30%;
+}
