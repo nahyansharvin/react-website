@@ -11,8 +11,8 @@ function About() {
                 <Heading title="About Us" subtitle="Why choose us?" />
             </div>
             <div className="about-container section-margin">
-                <div className="about-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div className="about-text body-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
                 <div className="about-image">
                     <img src={About_us} alt="about us"/>

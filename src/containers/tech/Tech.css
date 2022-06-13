@@ -1,0 +1,22 @@
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tech-image{
+    width: 30%;
+}
+
+.tech-image img{
+    width: 100%;
+}
+
+.tech-text{
+    width: 30%;
+}
