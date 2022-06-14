@@ -33,7 +33,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--color-secondary);
-    margin: 1rem 0;
+    margin: 1rem 0 2rem 0;
 }
 
 @media screen and (max-width: 768px){
