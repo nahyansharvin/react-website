@@ -6,3 +6,8 @@
     margin: 0 1rem;
     color: #fff;
 }
+
+.socialmedia-icon :hover{
+    color: var(--color-tertiary);
+    transition: color 0.3s ease-out;
+}
