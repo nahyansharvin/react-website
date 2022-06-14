@@ -1,0 +1,8 @@
+.socialmedia{
+    display: flex;
+}
+
+.socialmedia-icon{
+    margin: 0 1rem;
+    color: #fff;
+}

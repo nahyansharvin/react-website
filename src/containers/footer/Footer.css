@@ -1,0 +1,14 @@
+.footer-wrapper{
+    background-color: #494747;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-text{
+    color: #fff;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
