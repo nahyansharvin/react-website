@@ -1,4 +1,9 @@
 import React from 'react';
+import './ContactForm.css';
+
+//Material UI
+import TextField from '@mui/material/TextField';
+
 import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
   const [state, handleSubmit] = useForm("mdobjyon");
@@ -6,33 +11,16 @@ function ContactForm() {
       return <p>Thanks for joining!</p>;
   }
   return (
-      <form onSubmit={handleSubmit}>
-      <label htmlFor="email">
-        Email Address
-      </label>
-      <input
-        id="email"
-        type="email" 
-        name="email"
-      />
-      <ValidationError 
-        prefix="Email" 
-        field="email"
-        errors={state.errors}
-      />
-      <textarea
-        id="message"
-        name="message"
-      />
-      <ValidationError 
-        prefix="Message" 
-        field="message"
-        errors={state.errors}
-      />
-      <button type="submit" disabled={state.submitting}>
-        Submit
-      </button>
-    </form>
+    <form className='contact-form' onSubmit={handleSubmit}>
+    <TextField className='contact-form-field' name='name' id='name' type='text'  label="Name" />
+    <TextField className='contact-form-field' name='email' id='email' type='email' label="Email" />
+    <TextField className='contact-form-field' name='message' id='message' type='text' label="Message" multiline rows={5} />
+
+
+    <button type="submit" disabled={state.submitting}>
+      Submit
+    </button>
+  </form>
   );
 }
 function App() {

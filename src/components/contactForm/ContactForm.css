@@ -1,0 +1,19 @@
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-field{
+    margin-bottom: 0.6rem !important;
+}
+
+.contact-form button{
+    background: var(--color-primary);
+    height: 56px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color:  #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
