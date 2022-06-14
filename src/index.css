@@ -13,12 +13,7 @@
 
 
   
-  body {
-    margin: 0;
-    overflow-y: overlay;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+
   
   ::-webkit-scrollbar {
     width: 6px !important;

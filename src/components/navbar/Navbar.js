@@ -1,5 +1,10 @@
 import React from 'react'
 import './Navbar.css'
+import { useState } from 'react';
+
+//Icons
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 const NavMenu = () => (
   <>
@@ -12,6 +17,8 @@ const NavMenu = () => (
 )
 
 function Navbar() {
+  const [toggleMenu, setToggleMenu] = useState(false)
+
   return (
       <>
         <nav className="navbar">
@@ -22,6 +29,14 @@ function Navbar() {
             <div className="navbar-menu">
               <NavMenu/>
             </div>
+            <div className="navbar-menu-toggle">
+            {toggleMenu ? <CloseIcon fontSize="large" onClick={() => setToggleMenu(false)}/> : <MenuIcon fontSize='large' onClick={() => setToggleMenu(true)}/>}
+            {toggleMenu &&(
+              <div className="navbar-menu-container animate__animated animate__fadeInDown">
+                <NavMenu/>
+              </div>
+            )}
+          </div>
           </div>
         </nav>
       </>
