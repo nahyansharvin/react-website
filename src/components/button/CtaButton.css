@@ -6,3 +6,8 @@
     font-size: 1rem;
     color: #fff;
 }
+
+.cta-btn a:hover{
+    outline: 2px var(--color-tertiary) solid;
+    transition: 0.3s ease-in-out;
+}
