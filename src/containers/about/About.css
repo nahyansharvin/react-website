@@ -22,3 +22,16 @@
     width: 30%;
 }
 
+.about-text h4{
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .about-image{
+        width: 50%;
+    }
+
+    .about-text{
+        width: 50%;
+    }
+}

@@ -12,6 +12,7 @@ function About() {
             </div>
             <div className="about-container section-margin">
                 <div className="about-text body-text">
+                    <h4>Lorem ipsum dolor sit amet</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
                 <div className="about-image">
