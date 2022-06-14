@@ -36,3 +36,42 @@
     color: var(--color-secondary);
     margin: 1rem 0;
 }
+
+@media screen and (max-width: 768px){
+   
+}
+
+@media screen and (max-width: 480px){
+    .hero-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .hero-image{
+        width: 80%;
+    }
+    
+    .hero-text{
+        width: 80%;
+        margin: 0;
+        height: 50%;
+        justify-content: flex-start;
+    }
+
+    .hero-text h1{
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--color-primary);
+    }
+    
+    .hero-text p{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: var(--color-secondary);
+        margin: 2rem 0;
+    }
+
+    .hero-text :last-child{
+        margin-top: 1rem;
+    }
+}

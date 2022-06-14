@@ -25,3 +25,13 @@ a{
     color: var(--color-text);
     line-height: 1.5rem;
 }
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 480px){
+    .section-margin{
+        margin: 0 2rem 2rem 2rem;
+    }   
+}

@@ -26,6 +26,7 @@
 
 .navbar-menu-toggle{
     display: none;
+    position: relative;
 }
 
 .navbar-menu-container{
@@ -64,7 +65,6 @@
    }
 
     .navbar-menu-toggle{
-        visibility: visible;
         color: var(--color-primary);
         display: flex;
         width: 100%;
