@@ -17,7 +17,6 @@
 
 .hero-text{
     width: 40%;
-    margin: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,6 +37,19 @@
 }
 
 @media screen and (max-width: 768px){
+    .hero-image{
+        width: 45%;
+    }
+    .hero-text{
+        width: 50%;
+    }
+    .hero-text h1{
+        font-size: 2.5rem;
+    }
+    .hero-text p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
    
 }
 
@@ -60,14 +72,10 @@
 
     .hero-text h1{
         font-size: 2rem;
-        font-weight: 700;
-        color: var(--color-primary);
     }
     
     .hero-text p{
         font-size: 1.2rem;
-        font-weight: 400;
-        color: var(--color-secondary);
         margin: 2rem 0;
     }
 
