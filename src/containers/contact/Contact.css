@@ -28,3 +28,18 @@
 .contact-form-image img{
     width: 100%;
 }
+
+@media screen and (max-width: 768px){
+    .contact-form-container{
+        flex-direction: column;
+    }
+
+    .contact-form-wrapper{
+        width: 100%;
+    }
+
+    .contact-form-image{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}

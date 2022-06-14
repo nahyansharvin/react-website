@@ -35,3 +35,15 @@
         width: 50%;
     }
 }
+
+@media screen and (max-width: 480px){
+    .vision-container{
+        flex-direction: column-reverse;
+    }
+    .vision-image{
+        width: 80%;
+    }
+    .vision-text{
+        width: 100%;
+    }
+}

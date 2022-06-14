@@ -12,7 +12,7 @@
 }
 
 .hero-image img{
-    width: 70%;
+    width: 80%;
 }
 
 .hero-text{
@@ -57,7 +57,7 @@
     .hero-container{
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-end;
     }
     .hero-image{
         width: 80%;

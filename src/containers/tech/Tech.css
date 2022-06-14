@@ -35,3 +35,16 @@
         width: 50%;
     }
 }
+
+@media screen and (max-width: 480px){
+    .tech-container{
+        flex-direction: column;
+    }
+    .tech-image{
+        width: 80%;
+    }
+    .tech-text{
+        width: 100%;
+    }
+    
+}
