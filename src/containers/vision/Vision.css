@@ -26,6 +26,48 @@
     margin-bottom: 1rem;
 }
 
+.vision-text button{
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    background-color: var(--color-tertiary);
+    border: none;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.vision-text button:hover{
+    outline: 2px var(--color-tertiary) solid;
+    transition: 0.3s ease-in-out;
+}
+
+.gradient-animation{
+	background: linear-gradient(-45deg, #e1866a, #d093cf, #23a6d5, var(--color-bg));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    color: #fff;
+}
+
+.gradient-text{
+    color: #fff;
+}
+
+.gradient-text p{
+    font-weight: 200;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 @media screen and (max-width: 768px){
     .vision-image{
         width: 50%;
