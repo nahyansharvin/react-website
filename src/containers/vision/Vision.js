@@ -9,6 +9,7 @@ function Vision() {
       </div>
       <div className="vision-container section-margin">
         <div className="vision-text body-text">
+          <h4>Lorem Ipsum is simply dummy text for printing</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div className="vision-image">

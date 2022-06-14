@@ -20,3 +20,18 @@
 .tech-text{
     width: 30%;
 }
+
+.tech-text h4{
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .tech-image{
+        width: 50%;
+        padding-right: 1rem;
+    }
+
+    .tech-text{
+        width: 50%;
+    }
+}

@@ -21,3 +21,17 @@
 .vision-text{
     width: 30%;
 }
+
+.vision-text h4{
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .vision-image{
+        width: 50%;
+    }
+
+    .vision-text{
+        width: 50%;
+    }
+}

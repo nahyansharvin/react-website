@@ -13,6 +13,7 @@ function Tech() {
           <img src={require('./tech.svg').default} alt="tech"/>
         </div>
         <div className="tech-text body-text">
+          <h4>Lorem Ipsum is simply dummy text for printing</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
       </div>
