@@ -25,7 +25,6 @@ function Signup(props) {
 
     //Signup Button handler
     function signupButtonHandler() {
-        console.log("signup njekki")
         if (password === confirmPassword) {
             setPasswordError(false)
             console.log('Signup Successful')

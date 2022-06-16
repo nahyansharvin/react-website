@@ -27,7 +27,6 @@ function Navbar() {
   const [toggleSignupForm, setToggleSignupForm] = useState(false)
   const [users, setUsers] = useState([])
 
-  console.log(toggleSignupForm)
   return (
       <>
         <nav className="navbar">
