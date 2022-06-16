@@ -6,6 +6,9 @@ import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
+//Custom Components
+import {Login,Signup} from '../../components'
+
 const NavMenu = () => (
   <>
   <p><a href='#home'>Home</a></p>
@@ -19,6 +22,12 @@ const NavMenu = () => (
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false)
 
+  //Login and Signup
+  const [toggleLogin, setToggleLogin] = useState(false)
+  const [toggleSignupForm, setToggleSignupForm] = useState(false)
+  const [users, setUsers] = useState([])
+
+  console.log(toggleSignupForm)
   return (
       <>
         <nav className="navbar">
@@ -28,6 +37,9 @@ function Navbar() {
             </div> 
             <div className="navbar-menu">
               <NavMenu/>
+              <div className="login-button-container">
+                <button className="login-button" onClick={() => setToggleLogin(true)}>Login</button>
+              </div>
             </div>
             <div className="navbar-menu-toggle">
             {toggleMenu ? <CloseIcon fontSize="large" onClick={() => setToggleMenu(false)}/> : <MenuIcon fontSize='large' onClick={() => setToggleMenu(true)}/>}
@@ -38,6 +50,12 @@ function Navbar() {
             )}
           </div>
           </div>
+          {toggleLogin &&(
+            <div className="navbar-login-container">
+            {toggleSignupForm ? <Signup setToggleSignupForm={setToggleSignupForm} setToggleLogin={setToggleLogin} /> : <Login setToggleSignupForm={setToggleSignupForm} setToggleLogin={setToggleLogin} />}
+            
+          </div>
+          )}
         </nav>
       </>
   )

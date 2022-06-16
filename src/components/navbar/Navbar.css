@@ -19,6 +19,11 @@
     font-weight: 500;
 }
 
+.navbar-menu p:hover{
+    color: var(--color-tertiary);
+    transition: color 0.2s ease-out;
+}
+
 .navbar-logo {
     font-weight: 800;
     font-size: 3rem;
@@ -42,6 +47,34 @@
     min-width: 200px;
     border-radius: 5px;
     animation-duration: 0.2s;
+}
+
+.login-button-container button{
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    background-color: var(--color-tertiary);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.login-button-container button:hover{
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar-login-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(2px) grayscale(50%); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
