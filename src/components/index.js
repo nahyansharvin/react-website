@@ -5,3 +5,4 @@ export {default as ContactForm} from './contactForm/ContactForm';
 export {default as SocialMedia} from './socialmedia/SocialMedia';
 export {default as Login} from './login/Login';
 export {default as Signup} from './login/Signup';
+export {default as TextInput} from './textInput/TextInput';

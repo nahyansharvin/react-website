@@ -4,7 +4,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 
 //Material UI
-import { TextField } from '@mui/material';
+import {TextInput} from '../../components'
 
 
 function Login(props) {
@@ -20,8 +20,8 @@ function Login(props) {
       </div>
       <div className="login-form-container">
         <h1>Login</h1>
-        <TextField required fullWidth id="standard-basic" margin='normal' label="Username" value={username} onChange={(e) => setUsername(e.target.value)} variant="standard" />
-        <TextField required fullWidth type="password" id="standard-basic" margin='normal' label="Password" value={password} onClick={(e) => setPassword(e.target.value)} variant="standard" />
+        <TextInput label="Username" value={username} setValue={setUsername} />
+        <TextInput type="password" label="Password" value={password} setValue={setPassword} />
         <button>Login</button>
         <span onClick={() => setToggleSignupForm(true)}>New user? Signup</span>
       </div>

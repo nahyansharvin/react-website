@@ -4,7 +4,10 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 
 //Material UI
-import { TextField } from '@mui/material';
+// import { TextField } from '@mui/material';
+
+//Custom component
+import {TextInput} from '../../components'
 
 
 function Signup(props) {
@@ -38,9 +41,12 @@ function Signup(props) {
             </div>
             <div className="login-form-container">
                 <h1>Signup</h1>
-                <TextField required fullWidth id="standard-basic" margin='normal' label="Username" value={username} onChange={(e) => setUsername(e.target.value)} variant="standard" />
-                <TextField required fullWidth type="password" id="standard-basic" margin='normal' label="Password" value={password} onChange={(e) => setPassword(e.target.value)} variant="standard" />
-                <TextField required fullWidth type="password" id="standard-basic" margin='normal' label="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} error={passwordError ? true:false} helperText={passwordError && "Password must match."}  variant="standard" />
+                <TextInput label="Username" value={username} setValue={setUsername} />
+
+                <TextInput type="password" label="Password" value={password} setValue={setPassword} />
+
+                <TextInput type="password" label="Confirm Password" value={confirmPassword} setValue={setConfirmPassword} error={passwordError} />
+
                 <button onClick={signupButtonHandler}>Signup</button>
                 <span onClick={() => setToggleSignupForm(false)}>Existing user? Login</span>
             </div>
