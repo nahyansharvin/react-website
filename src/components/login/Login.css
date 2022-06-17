@@ -62,3 +62,9 @@
     margin-top: 0.5rem;
     cursor: pointer;
 }
+
+@media screen and (max-width: 780px){
+    .login-container{
+        min-width: 55%;
+    }
+}
