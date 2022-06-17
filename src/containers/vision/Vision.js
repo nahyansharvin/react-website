@@ -3,6 +3,9 @@ import './Vision.css'
 import { Heading } from '../../components'
 import { useState } from 'react'
 
+//Image
+import VisionImage from './vision.svg'
+
 function Vision() {
   const [animation, setAnimation] = useState(false)
 
@@ -18,7 +21,7 @@ function Vision() {
           <button onClick={() => setAnimation(!animation)}>See the Magic👻</button>
         </div>
         <div className="vision-image">
-          <img src={require('./vision.svg').default} alt="vision"/>
+          <img src={VisionImage} alt="vision"/>
         </div>
       </div>
     </div>
