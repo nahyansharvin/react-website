@@ -2,6 +2,9 @@ import React from 'react'
 import './Tech.css'
 import {Heading} from '../../components'
 
+//Image
+import TechImage from './tech_image.svg'
+
 function Tech() {
   return (
     <div className='tech-wrapper' id='tech'>
@@ -10,7 +13,7 @@ function Tech() {
       </div>
       <div className="tech-container section-margin">
         <div className="tech-image">
-          <img src={require('./tech.svg').default} alt="tech"/>
+          <img src={TechImage} alt="tech"/>
         </div>
         <div className="tech-text body-text">
           <h4>Lorem Ipsum is simply dummy text for printing</h4>
