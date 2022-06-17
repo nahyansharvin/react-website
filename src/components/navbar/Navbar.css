@@ -125,4 +125,33 @@
         font-size: 1.2rem;
         font-weight: 500;
     }
+
+    .mobile-profile-icon-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mobile-login-button-container button{
+        padding: 0.5rem 2rem;
+        margin-top: 0.5rem;
+        border-radius: 5px;
+        background-color: var(--color-primary);
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    
+    .mobile-profile-icon-container svg{
+        color: var(--color-primary);
+    }
+    
+    .mobile-profile-icon-container span{
+        color: var(--color-primary);
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }

@@ -26,7 +26,7 @@ function Navbar() {
   //Login and Signup
   const [toggleLogin, setToggleLogin] = useState(false)
   const [toggleSignupForm, setToggleSignupForm] = useState(false)
-  const [loggedIn, setLoggedIn] = useState(false)
+  const [loggedIn, setLoggedIn] = useState(true)
   const [users, setUsers] = useState([{ username: 'user', password: 'user' }])
 
   return (
@@ -38,6 +38,7 @@ function Navbar() {
           </div>
           <div className="navbar-menu">
             <NavMenu />
+            {/* Login and Logut Button */}
             <div className="login-button-container">
               {loggedIn ?
                 <div className='profile-icon-container'>
@@ -48,11 +49,23 @@ function Navbar() {
               }
             </div>
           </div>
+
+          {/* Mobile navmenu */}
           <div className="navbar-menu-toggle">
             {toggleMenu ? <CloseIcon fontSize="large" onClick={() => setToggleMenu(false)} /> : <MenuIcon fontSize='large' onClick={() => setToggleMenu(true)} />}
             {toggleMenu && (
               <div className="navbar-menu-container animate__animated animate__fadeInDown">
                 <NavMenu />
+                {/* Login and Logut Button */}
+                <div className="mobile-login-button-container">
+                  {loggedIn ?
+                    <div className='mobile-profile-icon-container'>
+                      <PersonIcon fontSize='large' />
+                      <span onClick={() => setLoggedIn(false)}>Logout</span>
+                    </div> :
+                    <button className="mobile-login-button" onClick={() => setToggleLogin(true)}>Login</button>
+                  }
+                </div>
               </div>
             )}
           </div>
