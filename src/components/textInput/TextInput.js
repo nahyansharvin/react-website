@@ -17,7 +17,7 @@ export default function TextInput(props) {
             error={value === "" || error ? true : false}
             value={value}
             onChange={handleChange}
-            helperText={value === "" && `${label} cannot be empty` || error && "Passwords must match."}
+            helperText={(value === "" && `${label} cannot be empty`) || (error && "Passwords must match.")}
         />
     );
 }

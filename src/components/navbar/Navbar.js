@@ -42,7 +42,7 @@ function Navbar() {
               {loggedIn ?
                 <div className='profile-icon-container'>
                   <PersonIcon fontSize='large' />
-                  <a onClick={() => setLoggedIn(false)}>Logout</a>
+                  <span onClick={() => setLoggedIn(false)}>Logout</span>
                 </div> :
                 <button className="login-button" onClick={() => setToggleLogin(true)}>Login</button>
               }
