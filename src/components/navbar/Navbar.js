@@ -51,7 +51,7 @@ function Navbar() {
           </div>
           {toggleLogin &&(
             <div className="navbar-login-container">
-            {toggleSignupForm ? <Signup setToggleSignupForm={setToggleSignupForm} setToggleLogin={setToggleLogin} /> : <Login setToggleSignupForm={setToggleSignupForm} setToggleLogin={setToggleLogin} />}
+            {toggleSignupForm ? <Signup users={users} setUsers={setUsers} setToggleSignupForm={setToggleSignupForm} setToggleLogin={setToggleLogin} /> : <Login setToggleSignupForm={setToggleSignupForm} setToggleLogin={setToggleLogin} />}
             
           </div>
           )}

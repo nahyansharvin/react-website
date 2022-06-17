@@ -8,6 +8,10 @@
     justify-content: space-evenly;
 }
 
+.animate__zoomIn{
+    animation-duration: 0.4s;
+}
+
 .login-container-header{
     display: flex;
     align-items: center;

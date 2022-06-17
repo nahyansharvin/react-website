@@ -7,11 +7,13 @@ import { useState } from 'react';
 // import { TextField } from '@mui/material';
 
 //Custom component
-import {TextInput} from '../../components'
+import { TextInput } from '../../components'
 
 
 function Signup(props) {
-    const { setToggleSignupForm, setToggleLogin } = props
+    const { users, setUsers, setToggleSignupForm, setToggleLogin } = props
+
+
     const [username, setUsername] = useState()
     const [password, setPassword] = useState()
     const [confirmPassword, setConfirmPassword] = useState()
@@ -21,15 +23,30 @@ function Signup(props) {
     function closeButtonHandler() {
         setToggleSignupForm(false)
         setToggleLogin(false)
+        console.log(users)
     }
 
-    //Signup Button handler
+    //Set error in empty fields
+    function errorSetter() {
+        if (username === undefined) setUsername("")
+        if (password === undefined) setPassword("")
+        if (confirmPassword === undefined) setConfirmPassword("")
+    }
+
+    //Handle Signup Button click
     function signupButtonHandler() {
-        if (password === confirmPassword) {
-            setPasswordError(false)
-            console.log('Signup Successful')
-        } else {
-            setPasswordError(true)
+        if (username === undefined || password === undefined || confirmPassword === undefined) {
+            errorSetter()
+            return
+        }else{
+            if(password === confirmPassword){
+                setUsers([...users, {username, password}])
+                setToggleSignupForm(false)
+                setUsername("")
+                setPassword("")
+                setConfirmPassword("")
+                alert("Signup Successful, Login to continue.")
+            }else setPasswordError(true)
         }
     }
 

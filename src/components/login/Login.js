@@ -14,7 +14,7 @@ function Login(props) {
   const [password, setPassword] = useState()
 
   return (
-    <div className="login-container">
+    <div className="login-container animate__animated animate__zoomIn">
       <div className="login-container-header">
         <CloseIcon onClick={() => setToggleLogin(false)} fontSize='large' />
       </div>
