@@ -33,7 +33,7 @@ function Signup(props) {
 
     //Handle Signup Button click
     function signupButtonHandler() {
-        if (username === undefined || password === undefined || confirmPassword === undefined) {
+        if (username === undefined || password === undefined || confirmPassword === undefined || username === "" || password === "" || confirmPassword === "") {
             errorSetter()
             return
         } else if (password === confirmPassword) {
