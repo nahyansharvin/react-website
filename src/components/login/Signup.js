@@ -3,8 +3,6 @@ import './Login.css'
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 
-//Material UI
-// import { TextField } from '@mui/material';
 
 //Custom component
 import { TextInput } from '../../components'
@@ -38,17 +36,17 @@ function Signup(props) {
         if (username === undefined || password === undefined || confirmPassword === undefined) {
             errorSetter()
             return
-        }else{
-            if(password === confirmPassword){
-                setUsers([...users, {username, password}])
-                setToggleSignupForm(false)
-                setUsername("")
-                setPassword("")
-                setConfirmPassword("")
-                alert("Signup Successful, Login to continue.")
-            }else setPasswordError(true)
-        }
+        } else if (password === confirmPassword) {
+            //Add user to users array
+            setUsers([...users, { username, password }])
+            setToggleSignupForm(false)
+            setUsername("")
+            setPassword("")
+            setConfirmPassword("")
+            alert("Signup Successful, Login to continue.")
+        } else setPasswordError(true)
     }
+
 
     return (
         <div className="login-container">
