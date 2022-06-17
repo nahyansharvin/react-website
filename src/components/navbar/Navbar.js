@@ -25,7 +25,8 @@ function Navbar() {
   //Login and Signup
   const [toggleLogin, setToggleLogin] = useState(false)
   const [toggleSignupForm, setToggleSignupForm] = useState(false)
-  const [users, setUsers] = useState([])
+  const [loggedIn, setLoggedIn] = useState(false)
+  const [users, setUsers] = useState([{username: 'user', password: 'user'}])
 
   return (
       <>
@@ -51,7 +52,7 @@ function Navbar() {
           </div>
           {toggleLogin &&(
             <div className="navbar-login-container">
-            {toggleSignupForm ? <Signup users={users} setUsers={setUsers} setToggleSignupForm={setToggleSignupForm} setToggleLogin={setToggleLogin} /> : <Login setToggleSignupForm={setToggleSignupForm} setToggleLogin={setToggleLogin} />}
+            {toggleSignupForm ? <Signup users={users} setUsers={setUsers} setToggleSignupForm={setToggleSignupForm} setToggleLogin={setToggleLogin} /> : <Login users={users} loggedIn={loggedIn} setLoggedIn={setLoggedIn} setToggleSignupForm={setToggleSignupForm} setToggleLogin={setToggleLogin} />}
             
           </div>
           )}

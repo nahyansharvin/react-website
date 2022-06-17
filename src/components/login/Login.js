@@ -8,10 +8,33 @@ import {TextInput} from '../../components'
 
 
 function Login(props) {
-  const { setToggleSignupForm, setToggleLogin } = props
+  const { users,setLoggedIn,setToggleSignupForm, setToggleLogin } = props
 
   const [username, setUsername] = useState()
   const [password, setPassword] = useState()
+
+  //To set error in empty fields
+  function errorSetter() {
+    if (username === undefined) setUsername("")
+    if (password === undefined) setPassword("")
+  }
+
+  //To validate login credentials
+  function validateLogin() {
+    //Check if fields are empty
+    if (username === undefined || password === undefined || username === "" || password === "") {
+      errorSetter()
+      return
+    } else {
+      //Check if username and password match
+      let user = users.find(user => user.username === username && user.password === password)
+      if (user) {
+        setLoggedIn(true)
+        setToggleLogin(false)
+        alert("Login Successful")
+      } else alert("Invalid username or password")
+    }
+  }
 
   return (
     <div className="login-container animate__animated animate__zoomIn">
@@ -22,7 +45,7 @@ function Login(props) {
         <h1>Login</h1>
         <TextInput label="Username" value={username} setValue={setUsername} />
         <TextInput type="password" label="Password" value={password} setValue={setPassword} />
-        <button>Login</button>
+        <button onClick={validateLogin}>Login</button>
         <span onClick={() => setToggleSignupForm(true)}>New user? Signup</span>
       </div>
     </div>
