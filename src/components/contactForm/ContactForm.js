@@ -14,9 +14,13 @@ function ContactForm() {
     <form className='contact-form' onSubmit={handleSubmit}>
     <TextField className='contact-form-field' name='name' id='name' type='text'  label="Name" />
     <TextField className='contact-form-field' name='email' id='email' type='email' label="Email" />
+    <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
     <TextField className='contact-form-field' name='message' id='message' type='text' label="Message" multiline rows={5} />
-
-
+  
     <button type="submit" disabled={state.submitting}>
       Submit
     </button>

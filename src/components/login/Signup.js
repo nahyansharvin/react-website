@@ -21,7 +21,6 @@ function Signup(props) {
     function closeButtonHandler() {
         setToggleSignupForm(false)
         setToggleLogin(false)
-        console.log(users)
     }
 
     //Set error in empty fields

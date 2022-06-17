@@ -1,6 +1,9 @@
 import React from 'react'
 import './Home.css'
+
+//Image
 import Hero from './hero_image.svg'
+
 //Custom Components
 import {CtaButton} from '../../components'
 

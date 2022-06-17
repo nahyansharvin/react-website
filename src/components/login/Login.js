@@ -3,7 +3,7 @@ import './Login.css'
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 
-//Material UI
+//Custom Component
 import {TextInput} from '../../components'
 
 

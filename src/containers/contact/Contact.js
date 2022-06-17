@@ -1,6 +1,10 @@
 import React from 'react'
 import './Contact.css'
+
+//Custom Component
 import { Heading,ContactForm } from '../../components'
+
+//Image
 import ContactImage from './contact_image.svg'
 
 function Contact() {

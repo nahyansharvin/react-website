@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 
+//Custom Component
 import {SocialMedia} from '../../components'
 
 function Footer() {

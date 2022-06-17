@@ -1,6 +1,10 @@
 import React from 'react'
 import './About.css'
+
+//Image
 import About_us from './About_us.svg'
+
+//Custom Component
 import {Heading} from '../../components'
 
 function About() {
