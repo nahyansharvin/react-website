@@ -49,6 +49,12 @@
     animation-duration: 0.2s;
 }
 
+.profile-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .login-button-container button{
     padding: 0.8rem 2rem;
     border-radius: 50px;
@@ -63,6 +69,16 @@
 .login-button-container button:hover{
     color: #fff;
     transition: 0.2s ease-in-out;
+}
+
+.profile-icon-container svg{
+    color: var(--color-primary);
+}
+
+.profile-icon-container a{
+    color: var(--color-primary);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .navbar-login-container{
